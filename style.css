@@ -25,6 +25,14 @@ header .logo {
   cursor: pointer;
 }
 
+header span {
+  color: rgb(24, 223, 51);
+}
+
+section span {
+  color: rgb(73, 255, 97);
+}
+
 .toggle {
   position: relative;
   width: 60px;
