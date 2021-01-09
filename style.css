@@ -35,6 +35,7 @@ section span {
 
 .toggle {
   position: relative;
+  /* left: 90%; */
   width: 60px;
   height: 60px;
   background: url('menu.png');
@@ -45,12 +46,16 @@ section span {
 }
 
 .toggle.active {
+  right: -380px;
   background: url('close.png');
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
   cursor: pointer;
+  filter: invert(100%);
 }
+
+
 
 .showcase {
   position: absolute;
@@ -188,10 +193,14 @@ section span {
 }
 
 .menu ul li a:hover {
-  color: #03a9f4;
+  color: rgb(73, 255, 97);
 }
 
 @media (max-width: 991px) {
+
+  .toggle.active {
+    right: -300px;
+  }
 
   .showcase,
   .showcase header {
